@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Amigo - Comparte tus momentos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="mb-0">Bar Amigo</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria"><i class="bi bi-images"></i> Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu"><i class="bi bi-cup-straw"></i> Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promos"><i class="bi bi-percent"></i> Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Galería Interactiva -->
+    <section id="galeria" class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2>Comparte tus mejores momentos</h2>
+                <p>¿Has disfrutado de una velada inolvidable en el Bar Amigo? ¡Sube fotos de tus momentos especiales y forma parte de nuestra galería! Comparte la diversión con nuestros clientes.</p>
+            </div>
+            
+            <div class="gallery-controls">
+                <div class="input-group">
+                    <input type="url" id="imageUrl" class="form-control form-control-lg" 
+                           placeholder="Pega aquí el enlace de tu imagen..." required>
+                    <button id="addImageBtn" class="btn btn-primary btn-lg">
+                        <i class="bi bi-cloud-arrow-up"></i> Compartir
+                    </button>
+                </div>
+                <button id="deleteImageBtn" class="btn btn-outline-danger btn-lg" disabled>
+                    <i class="bi bi-trash"></i> Eliminar selección
+                </button>
+            </div>
+            
+            <div id="galleryGrid" class="gallery-grid">
+                <!-- Imágenes se agregarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resto del contenido -->
+    <main class="container my-5">
+        <!-- Sección Menú -->
+        <section id="menu" class="mb-5">
+            <h2 class="text-center mb-4">Nuestro Menú</h2>
+            <div class="row">
+                <!-- Contenido del menú -->
+            </div>
+        </section>
+
+        <!-- Sección Promociones -->
+        <section id="promos" class="mb-5">
+            <h2 class="text-center mb-4">Promociones Especiales</h2>
+            <div class="row">
+                <!-- Contenido de promociones -->
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row">
+                <!-- Formulario de contacto -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">© 2025 Bar Amigo - Todos los derechos reservados</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
